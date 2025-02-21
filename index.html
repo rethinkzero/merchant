@@ -92,7 +92,7 @@
         <li>Custom Jewelry</li>
         <li>Bespoke Fragrance Blends</li>
     </ul>
-   <form action="https://formspree.io/f/mrbejyrw"method="POST">
+   <form id="contact-form" action="https://formspree.io/f/mrbejyrw"method="POST">
     <label for="userInput">Enter your message:</label>
     <textarea id="userInput" name="userInput" required></textarea>
        
@@ -136,8 +136,8 @@
     const form = document.getElementById('contact-form');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
+        event.preventDefault();  
+
         const formData = new FormData(form);
 
         fetch(form.action, {
@@ -153,7 +153,7 @@
             }
         })
         .catch(error => {
-            alert("There was an error sending your message. Please try again.");
+            alert("There was an error sending your message. Please try again.");  
         });
     });
 </script>
