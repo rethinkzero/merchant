@@ -122,17 +122,6 @@ li {
     padding-left: 0;
 }
 
-.textbox-container {
-    margin-bottom: 20px; 
-    text-align: center; 
-}
-
-.textbox {
-    border: 1px solid #4b3f31; 
-    border-radius: 5px; 
-    box-sizing: border-box;
-}
-
 .submit-btn {
     background-color: #4b3f31; 
     color: white;
