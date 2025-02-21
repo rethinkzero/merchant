@@ -132,7 +132,32 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
+    
+<script>
+    const form = document.getElementById('contact-form');
 
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                alert("Your message has been sent successfully!");
+            } else {
+                alert("There was an error sending your message. Please try again.");
+            }
+        })
+        .catch(error => {
+            alert("There was an error sending your message. Please try again.");
+        });
+    });
+</script>
 
 <footer>
     <p>&copy; 2025 The Merchant's Emporium. All rights reserved.</p>
