@@ -45,16 +45,8 @@ header nav ul li a {
 
 /* Banner */
 .banner {
-    background-image: url('banner-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-}
-.banner {
     background-color: #4b3f31; 
-    color: #fff;
+    color: #fff; 
     padding: 80px 0;
     text-align: center;
 }
