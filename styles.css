@@ -32,7 +32,7 @@ header nav ul {
 
 header nav ul li {
     list-style-type: none;
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
@@ -40,6 +40,7 @@ header nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+    display: inline-block;
 }
 
 header nav ul li a:hover {
@@ -117,7 +118,7 @@ h2 {
 }
 
 .textbox {
-    font-size: 16px; 
+    font-size: 10px; 
     border: 1px solid #4b3f31; 
     border-radius: 5px; 
     box-sizing: border-box; 
